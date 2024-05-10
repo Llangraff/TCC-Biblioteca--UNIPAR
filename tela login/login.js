@@ -12,3 +12,13 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         alert("Usuário ou senha incorretos. Por favor, tente novamente.");
     }
 });
+
+
+
+document.getElementById("registerForm").addEventListener("submit", function(event) {
+    // Impede o comportamento padrão do formulário de ser enviado
+    event.preventDefault();
+    
+    // Redireciona para a página de login
+    window.location.href = "login.html";
+});
