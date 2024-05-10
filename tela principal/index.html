@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Sistema de Gerenciamento de Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gerenciamento de Biblioteca</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Empréstimos</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="welcomeMessage"></h2>
+        <!-- Aqui você pode adicionar mais conteúdo conforme necessário -->
+    </main>
+
+    <script>
+        // Obtém o nome de usuário da sessão
+        var username = sessionStorage.getItem("username");
+
+        // Atualiza a mensagem de boas-vindas para incluir o nome do usuário
+        document.getElementById("welcomeMessage").innerText = "Bem-vindo, " + username + "!";
+    </script>
+</body>
+</html>
